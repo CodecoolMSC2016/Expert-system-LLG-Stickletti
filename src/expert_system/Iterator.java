@@ -1,5 +1,9 @@
 package expert_system;
 
-public class Iterator {
+interface Iterator {
 
+	boolean hasNext();
+
+	Object Next();
 }
+

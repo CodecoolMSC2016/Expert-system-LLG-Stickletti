@@ -8,5 +8,15 @@ public class ESProvider {
 		this.factParser = factParser;
 		this.ruleParser = ruleParser;
 	}
+
+	public void collectAnswers() {
+	}
+
+	public void getEvaluateAnswer(Boolean id) {
+	}
+
+	public String evaluate() {
+		return null;
+	}
 }
 

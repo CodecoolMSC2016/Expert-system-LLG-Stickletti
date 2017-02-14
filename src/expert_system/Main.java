@@ -3,8 +3,9 @@ package expert_system;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		ESProvider esprov = new ESProvider(new FactParser(), new RuleParser());
 
 	}
 
 }
+
