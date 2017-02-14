@@ -1,0 +1,41 @@
+<Rules>
+	<Rule>id="programming" 
+		<Question>
+			"Do you interested about IT or programming?"
+		</Question>
+		<Answer>
+			<Selection value="true">
+				<Single value="yes"/>
+			</Selection>
+			<Selection value="false">
+				<Single value="no"/>
+			</Selection>
+		</Answer>
+	</Rule>
+	<Rule>id="humans"
+		<Question>
+			"What do you think: what is the optimal group size? (4,5,6, or 0 = you don't like groups.)"
+		</Question>"
+		<Answer>
+			<Selection value="true">
+				<MultipleValue value="4,5,6"/>
+			</Selection>
+			<Selection value="false">
+				<MultipleValue value="0"/>
+			</Selection>
+		</Answer>
+	</Rule>
+	<Rule>id="money"
+		<Question>
+			"Do you want to earn a lot of money?"
+		</Question>
+		<Answer>
+			<Selection value="true">
+				<Single value="yes"/>
+			</Selection>
+			<Selection value="false">
+				<Single value="no"/>
+			</Selection>
+		</Answer>
+	</Rule>
+</Rules>
