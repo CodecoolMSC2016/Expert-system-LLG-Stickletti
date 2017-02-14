@@ -1,0 +1,79 @@
+<KM>
+	<Fact id="Codecool">
+		<Description value="Join to the Codecool, that's the best choice for you! ;)"/>
+			<Evals>
+				<Eval id="programming">true
+				</Eval>
+				<Eval id="humans">true
+				</Eval>
+				<Eval id="money">true
+				</Eval>
+			</Evals>
+	</Fact>
+	<Fact id="Teacher">
+		<Description value="Become a comupter science teacher!"/>
+			<Evals>
+				<Eval id="programming">true
+				</Eval>
+				<Eval id="humans">true
+				</Eval>
+				<Eval id="money">false
+				</Eval>
+			</Evals>
+	</Fact>
+	<Fact id="SystemAdministrator">
+		<Description value="System administrator is the best position for you..."/>
+			<Evals>
+				<Eval id="programming">true
+				</Eval>
+				<Eval id="humans">false
+				</Eval>
+				<Eval id="money">false
+				</Eval>
+			</Evals>
+	</Fact>
+	<Fact id="Doorman">
+		<Description value="You would be a perfect doorman!"/>
+			<Evals>
+				<Eval id="programming">false
+				</Eval>
+				<Eval id="humans">false
+				</Eval>
+				<Eval id="money">false
+				</Eval>
+			</Evals>
+	</Fact>
+	<Fact id="Astronaut">
+		<Description value="Become an astronaut! It's suitable for you, I think."/>
+			<Evals>
+				<Eval id="programming">false
+				</Eval>
+				<Eval id="humans">false
+				</Eval>
+				<Eval id="money">true
+				</Eval>
+			</Evals>
+	</Fact>
+	<Fact id="Systems Architect">
+		<Description value="Not so hard, let's check it!"/>
+			<Evals>
+				<Eval id="programming">true
+				</Eval>
+				<Eval id="humans">false
+				</Eval>
+				<Eval id="money">true
+				</Eval>
+			</Evals>
+	</Fact>
+		<Fact id="Social">
+		<Description value="Go and to be a doctor, or something else social...it's not our business."/>
+			<Evals>
+				<Eval id="programming">false
+				</Eval>
+				<Eval id="humans">true
+				</Eval>
+				<Eval id="money">true
+				</Eval>
+			</Evals>
+	</Fact>
+</KM>
