@@ -1,8 +1,8 @@
 package expert_system;
 
-public class SingleValue {
+public class SingleValue extends Value {
 
-	public SingleValue(String something) {
+	public SingleValue(String param) {
 
 	}
 }

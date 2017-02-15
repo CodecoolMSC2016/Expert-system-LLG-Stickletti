@@ -1,8 +1,8 @@
 package expert_system;
 
-public class MultipleValue {
+public class MultipleValue extends Value{
 
-	public MultipleValue(String something) {
+	public MultipleValue(String param) {
 
 	}
 }

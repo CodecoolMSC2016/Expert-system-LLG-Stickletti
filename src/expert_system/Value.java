@@ -1,6 +1,6 @@
 package expert_system;
 
-public class Value {
+public abstract class Value {
 
 	public String[] getInputPattern() {
 		return null;
