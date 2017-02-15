@@ -10,7 +10,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 
-public class RuleParser implements XmlParser {
+public class RuleParser extends XmlParser {
 
 	String fileName = "rules.xml";
 

@@ -1,6 +1,6 @@
 package expert_system;
 
-public interface XmlParser {
+public abstract class XmlParser {
 
 	public abstract void loadXmlDocument(String fullPath);
 }
