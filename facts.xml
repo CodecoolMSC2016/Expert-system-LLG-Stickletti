@@ -65,7 +65,7 @@
 				</Eval>
 			</Evals>
 	</Fact>
-		<Fact id="Social">
+	<Fact id="Social">
 		<Description value="Go and to be a doctor, or something else social...it's not our business."/>
 			<Evals>
 				<Eval id="programming">false
@@ -73,6 +73,17 @@
 				<Eval id="humans">true
 				</Eval>
 				<Eval id="money">true
+				</Eval>
+			</Evals>
+	</Fact>
+	<Fact id="Voluntary Worker">
+		<Description value="Do something for free!!!"/>
+			<Evals>
+				<Eval id="programming">false
+				</Eval>
+				<Eval id="humans">true
+				</Eval>
+				<Eval id="money">false
 				</Eval>
 			</Evals>
 	</Fact>
