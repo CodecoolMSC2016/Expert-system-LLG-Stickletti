@@ -5,12 +5,11 @@ import java.util.Map;
 
 public class RuleRepository {
 
-	Map<Question, String> ruleMap = new HashMap<Question, String>();
-	
+	Map<String, Question> ruleMap = new HashMap<>();
+
 	public Question addQuestion(String id, Question question) {
-		
-		ruleMap.put(question, id);
-		return null;
+		ruleMap.put(id, question);
+		return question;
 	}
 
 	public Iterator getIterator() {
