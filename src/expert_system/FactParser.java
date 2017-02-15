@@ -1,6 +1,5 @@
 package expert_system;
 
-
 import java.io.File;
 import java.io.FileInputStream;
 
@@ -8,15 +7,23 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
 import org.w3c.dom.Document;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class FactParser implements XmlParser {
 
 	String fileName = "facts.xml";
+	NodeList nodeList;
 
 	public FactRepository getFactRepository() {
 
+		FactRepository factRepo = new FactRepository();
 		loadXmlDocument(fileName);
+
+		for (int i = 0; i < nodeList.getLength(); i++) {
+			Node node = nodeList.item(i);
+		}
+
 		return null;
 	}
 
