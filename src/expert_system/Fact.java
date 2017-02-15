@@ -13,7 +13,7 @@ public class Fact {
 	}
 
 	public boolean getValueByID() {
-		// return null;
+		return false;
 	}
 
 	public String getDescription() {

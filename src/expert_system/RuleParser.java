@@ -1,5 +1,6 @@
 package expert_system;
 
+
 import java.io.File;
 import java.io.FileInputStream;
 
@@ -9,13 +10,18 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 
-public class RuleParser extends XmlParser {
+public class RuleParser implements XmlParser {
 
-	public RuleRepository getFactRepository() {
+	public RuleRepository getRuleRepository() {
+
+		String fileName = "rules.xml";
+		loadXmlDocument(fileName);
 		return null;
 	}
 
-	public NodeList loadXmlDocument(String fullPath) {
+	@Override
+	public void loadXmlDocument(String fullPath) {
+
 		try {
 
 			FileInputStream file = new FileInputStream(new File(fullPath));
@@ -25,14 +31,11 @@ public class RuleParser extends XmlParser {
 			doc.getDocumentElement().normalize();
 			NodeList nodelist = doc.getElementsByTagName("Rule");
 
-			return nodelist;
-
 		} catch (Exception e) {
 
 			System.out.println("Sorry but I was unable to open your data file");
 			e.printStackTrace();
+
 		}
-		return null;
 	}
 }
-

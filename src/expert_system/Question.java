@@ -15,7 +15,7 @@ public class Question {
 	}
 
 	public boolean getEvaluatedAnswer(String input) {
-		// return null;
+		return false;
 	}
 }
 

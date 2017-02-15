@@ -2,7 +2,7 @@ package expert_system;
 
 public class Answer {
 	public boolean evaluateAnswerbyInput(String input) {
-		// return null;
+		return false;
 	}
 
 	public void addValue(Value value) {

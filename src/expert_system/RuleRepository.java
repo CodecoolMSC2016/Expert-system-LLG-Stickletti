@@ -7,11 +7,10 @@ public class RuleRepository {
 	}
 
 	public Iterator getIterator() {
-
+		return null;
 	}
 
-	class QuestionIterator implements Iterator()
-	{
+	class QuestionIterator implements Iterator {
 
 		@Override
 		public boolean hasNext() {
