@@ -1,6 +1,10 @@
 package expert_system;
 
+import java.util.ArrayList;
+
 public class FactRepository {
+
+	ArrayList<Fact> factList = new ArrayList<>();
 
 	public Iterator getIterator() {
 		return null;
@@ -9,18 +13,24 @@ public class FactRepository {
 	public void addFact(Fact fact) {
 
 	}
-	
-	class FactIterator implements Iterator{
-		
+
+	class FactIterator implements Iterator {
+
+		int index;
+
 		@Override
 		public boolean hasNext() {
-			// TODO Auto-generated method stub
+			if (index < factList.size()) {
+				return true;
+			}
 			return false;
 		}
 
 		@Override
 		public Object Next() {
-			// TODO Auto-generated method stub
+			if (this.hasNext()) {
+				return factList.get(index);
+			}
 			return null;
 		}
 	}

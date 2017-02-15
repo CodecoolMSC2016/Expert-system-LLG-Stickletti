@@ -17,16 +17,21 @@ public class FactParser extends XmlParser {
 	NodeList nodeList;
 
 	public FactRepository getFactRepository() {
-
 		FactRepository factRepo = new FactRepository();
 		loadXmlDocument(fileName);
+		Node node;
+		Element element;
+		String factId;
 
 		for (int i = 0; i < nodeList.getLength(); i++) {
-			Node node = nodeList.item(i);
-			Node tempNode = ((Element) node).getElementsByTagName("Description").item(0);
-			Element element = (Element) tempNode;
-			System.out.println(element.getAttribute("value"));
+			node = nodeList.item(i);
+			element = ((Element) node);
+			factId = element.getAttribute("id");
+			System.out.println(factId);
 
+			// need a new Fact;
+			// iterate...
+			// fixed value!
 		}
 
 		return null;

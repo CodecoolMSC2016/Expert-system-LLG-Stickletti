@@ -16,17 +16,23 @@ public class RuleRepository {
 		return null;
 	}
 
-	class QuestionIterator implements Iterator {
+	public class QuestionIterator implements Iterator {
+
+		int index;
 
 		@Override
 		public boolean hasNext() {
-			// TODO Auto-generated method stub
+			if (index < ruleMap.size()) {
+				return true;
+			}
 			return false;
 		}
 
 		@Override
 		public Object Next() {
-			// TODO Auto-generated method stub
+			if (this.hasNext()) {
+				//return ruleMap.values();
+			}
 			return null;
 		}
 	}
