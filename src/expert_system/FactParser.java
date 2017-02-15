@@ -24,13 +24,9 @@ public class FactParser extends XmlParser {
 		for (int i = 0; i < nodeList.getLength(); i++) {
 			Node node = nodeList.item(i);
 			Node tempNode = ((Element) node).getElementsByTagName("Description").item(0);
-			Node description = ((Element) tempNode).getAttributeNode("value");
-			String elementId = ((Element) node).getAttribute("id");
+			Element element = (Element) tempNode;
+			System.out.println(element.getAttribute("value"));
 
-			Element element = (Element) node;
-			// element.getElementsByTagName("Description").item(0);
-			// NodeList evals = ((Element)
-			// description).getElementsByTagName("Evals");
 		}
 
 		return null;
@@ -46,7 +42,7 @@ public class FactParser extends XmlParser {
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(file);
 			doc.getDocumentElement().normalize();
-			NodeList nodelist = doc.getElementsByTagName("Fact");
+			nodeList = doc.getElementsByTagName("Fact");
 
 		} catch (Exception e) {
 
@@ -56,3 +52,4 @@ public class FactParser extends XmlParser {
 		}
 	}
 }
+
