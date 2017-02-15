@@ -1,6 +1,6 @@
 package expert_system;
 
-interface Iterator {
+public interface Iterator {
 
 	boolean hasNext();
 
