@@ -21,10 +21,12 @@ public class FactParser extends XmlParser {
 		loadXmlDocument(fileName);
 
 		for (int i = 0; i < nodeList.getLength(); i++) {
-			Node node = nodeList.item(i);
-			Element element = (Element) node;
-			Node Description = element.getElementsByTagName("Description").item(0);
-
+			Node node = nodeList.item(i); // node.getNodeName() -- Fact
+			// Element element = (Element) node;
+			// Node description =
+			// element.getElementsByTagName("Description").item(0);
+			// NodeList evals = ((Element)
+			// description).getElementsByTagName("Evals");
 		}
 
 		return null;
