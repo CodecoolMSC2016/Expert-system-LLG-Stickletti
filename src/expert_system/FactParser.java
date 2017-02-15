@@ -22,6 +22,9 @@ public class FactParser extends XmlParser {
 
 		for (int i = 0; i < nodeList.getLength(); i++) {
 			Node node = nodeList.item(i);
+			Element element = (Element) node;
+			Node Description = element.getElementsByTagName("Description").item(0);
+
 		}
 
 		return null;
