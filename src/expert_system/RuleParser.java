@@ -12,9 +12,10 @@ import org.w3c.dom.NodeList;
 
 public class RuleParser implements XmlParser {
 
+	String fileName = "rules.xml";
+
 	public RuleRepository getRuleRepository() {
 
-		String fileName = "rules.xml";
 		loadXmlDocument(fileName);
 		return null;
 	}

@@ -12,9 +12,10 @@ import org.w3c.dom.NodeList;
 
 public class FactParser implements XmlParser {
 
+	String fileName = "facts.xml";
+
 	public FactRepository getFactRepository() {
 
-		String fileName = "facts.xml";
 		loadXmlDocument(fileName);
 		return null;
 	}

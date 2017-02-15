@@ -1,7 +1,11 @@
 package expert_system;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class RuleRepository {
 
+	Map<Question, String> factMap = new HashMap<Question, String>();
 	public Question addQuestion(String id, Question question) {
 		return null;
 	}
