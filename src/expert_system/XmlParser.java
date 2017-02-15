@@ -1,9 +1,7 @@
 package expert_system;
 
-public class XmlParser {
+public abstract XmlParser {
 
-	public void XmlDocument(String fullPath) {
-
-	}
+	public abstract void loadXmlDocument(String fullPath);
 }
 
