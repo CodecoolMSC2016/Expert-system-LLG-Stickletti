@@ -5,8 +5,11 @@ import java.util.Map;
 
 public class RuleRepository {
 
-	Map<Question, String> factMap = new HashMap<Question, String>();
+	Map<Question, String> ruleMap = new HashMap<Question, String>();
+	
 	public Question addQuestion(String id, Question question) {
+		
+		ruleMap.put(question, id);
 		return null;
 	}
 
