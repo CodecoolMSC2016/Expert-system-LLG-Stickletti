@@ -1,0 +1,16 @@
+/Answer.class
+/ESProvider.class
+/Fact.class
+/FactParser.class
+/FactRepository$FactIterator.class
+/FactRepository.class
+/Iterator.class
+/Main.class
+/MultipleValue.class
+/Question.class
+/RuleParser.class
+/RuleRepository$QuestionIterator.class
+/RuleRepository.class
+/SingleValue.class
+/Value.class
+/XmlParser.class
