@@ -24,5 +24,11 @@ public class MultipleValue extends Value {
 		this.falseValue = falseValue.split(",");
 
 	}
+
+	@Override
+	public String[] getInputPattern() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
 

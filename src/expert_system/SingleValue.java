@@ -11,7 +11,7 @@ public abstract class SingleValue extends Value {
 	}
 
 	public String getTrueValue() {
-		
+
 		return trueValue;
 
 	}
@@ -25,10 +25,10 @@ public abstract class SingleValue extends Value {
 		falseValue = param;
 
 	}
+
 	public void setTruevalue(String param) {
 		trueValue = param;
 
 	}
-}
 }
 
