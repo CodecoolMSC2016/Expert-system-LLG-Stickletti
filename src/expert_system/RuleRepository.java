@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RuleRepository {
-
+	public int positon = 0;
 	Map<String, Question> ruleMap = new HashMap<>();
 
 	public Question addQuestion(String id, Question question) {
@@ -31,6 +31,8 @@ public class RuleRepository {
 		@Override
 		public Object Next() {
 			if (this.hasNext()) {
+				return map.get((ruleMap.keySet().toArray())[position] );
+			position ++;
 				//return ruleMap.values();
 			}
 			return null;
