@@ -1,6 +1,6 @@
 package expert_system;
 
-public class SingleValue extends Value {
+public abstract class SingleValue extends Value {
 
 	private String trueValue;
 	private String falseValue;
