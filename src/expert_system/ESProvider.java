@@ -16,15 +16,14 @@ public class ESProvider {
 	}
 
 	public boolean getAnswerByQuestion(String questionID) {
-		
-			for (int i = 0; i < ruleMap.size() ; i++)
-			{
-				if (ruleMap.get((ruleMap.keySet().toArray())[i]).contains(questionID);
-			{
-				return (boolean)answerCollection.toArray()[i];
+		int answerindex = 0;
+		for (Entry<String, Question> elements : ruleMap.entrySet()) {
+			if (elements.getKey().contains(questionID)) {
+				return (boolean) answerCollection.toArray()[answerindex];
 			}
-			}
-		
+			answerindex++;
+		}
+		return false;
 	}
 
 	public void collectAnswers() {
