@@ -32,9 +32,8 @@ public class RuleRepository {
 		@Override
 		public Object Next() {
 			if (this.hasNext()) {
-				return ruleMap.get((ruleMap.keySet().toArray())[position]);
+				return ruleMap.get((ruleMap.keySet().toArray())[position++]);
 			}
-			position++;
 			return null;
 		}
 	}

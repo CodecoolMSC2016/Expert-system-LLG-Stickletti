@@ -30,7 +30,7 @@ public class FactRepository {
 		@Override
 		public Object Next() {
 			if (this.hasNext()) {
-				return factList.get(index);
+				return factList.get(index++);
 			}
 			return null;
 		}
