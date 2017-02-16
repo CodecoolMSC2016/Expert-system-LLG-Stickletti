@@ -1,6 +1,6 @@
 package expert_system;
 
-public abstract class MultipleValue extends Value {
+public class MultipleValue extends Value {
 
 	private String[] trueValue;
 	private String[] falseValue;

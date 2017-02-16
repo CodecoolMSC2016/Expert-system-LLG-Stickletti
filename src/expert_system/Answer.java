@@ -10,10 +10,10 @@ public class Answer {
 	public boolean evaluateAnswerbyInput(String input) {
 		input = input.toLowerCase();
 		if (input.equals(value) && input == "yes") {
-			answerCollection.add(value);
+			answerCollection.add(true);
 			return true;
 		}
-		answerCollection.add(value);
+		answerCollection.add(false);
 		return false;
 
 	}
