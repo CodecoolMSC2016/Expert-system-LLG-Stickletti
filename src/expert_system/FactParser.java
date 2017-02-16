@@ -30,8 +30,8 @@ public class FactParser extends XmlParser {
 			System.out.println(factId);
 
 			Node descriptNode = element.getElementsByTagName("Description").item(0);
-			String description = descriptNode.getTextContent();
-
+			String description = ((Element) descriptNode).getAttribute("value");
+			System.out.println(description);
 		}
 
 		return null;
