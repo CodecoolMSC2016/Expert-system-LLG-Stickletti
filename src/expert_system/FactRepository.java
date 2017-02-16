@@ -7,10 +7,11 @@ public class FactRepository {
 	ArrayList<Fact> factList = new ArrayList<>();
 
 	public Iterator getIterator() {
-		return null;
+		return new FactIterator();
 	}
 
 	public void addFact(Fact fact) {
+		factList.add(fact);
 
 	}
 

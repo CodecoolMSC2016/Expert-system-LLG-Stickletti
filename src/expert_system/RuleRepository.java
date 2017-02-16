@@ -13,7 +13,7 @@ public class RuleRepository {
 	}
 
 	public Iterator getIterator() {
-		return null;
+		return new QuestionIterator();
 	}
 
 	public class QuestionIterator implements Iterator {

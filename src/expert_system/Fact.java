@@ -4,8 +4,12 @@ import java.util.Set;
 
 public class Fact {
 
-	public void setFactValueByID(String id, boolean value) {
+	String id;
+	boolean value;
 
+	public void setFactValueByID(String id, boolean value) {
+		this.id = id;
+		this.value = value;
 	}
 
 	public Set<String> getIDSet() {
