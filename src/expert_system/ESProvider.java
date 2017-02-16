@@ -10,9 +10,12 @@ public class ESProvider {
 		this.factParser = factParser;
 		this.ruleParser = ruleParser;
 	}
-	
-	public boolean getAnswerByQuestion(String questionID)
-	{
+
+	public ArrayList<String> answerCollection = new ArrayList<>();
+
+	public boolean getAnswerByQuestion(String questionID) {
+
+		return false;
 	}
 
 	public void collectAnswers() {
@@ -23,4 +26,3 @@ public class ESProvider {
 		return null;
 	}
 }
-
