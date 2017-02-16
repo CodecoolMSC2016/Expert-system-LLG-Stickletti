@@ -4,6 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RuleRepository {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 68854e9527ca7882bce5bf53662e3d51f139dfff
 	public int position = 0;
 	Map<String, Question> ruleMap = new HashMap<>();
 
@@ -31,10 +35,9 @@ public class RuleRepository {
 		@Override
 		public Object Next() {
 			if (this.hasNext()) {
-				return map.get((ruleMap.keySet().toArray())[position] );
-			position ++;
-				//return ruleMap.values();
+				return ruleMap.get((ruleMap.keySet().toArray())[position]);
 			}
+			position++;
 			return null;
 		}
 	}

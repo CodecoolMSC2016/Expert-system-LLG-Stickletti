@@ -10,8 +10,6 @@ public class ESProvider {
 		this.factParser = factParser;
 		this.ruleParser = ruleParser;
 	}
-	Map<String, Question,Boolean> evalMap = new HashMap<>();
-	public ArrayList<E> <String> answerCollection = new Arraylist <>;
 	
 	public boolean getAnswerByQuestion(String questionID)
 	{
