@@ -29,9 +29,9 @@ public class FactParser extends XmlParser {
 			factId = element.getAttribute("id");
 			System.out.println(factId);
 
-			// need a new Fact;
-			// iterate...
-			// fixed value!
+			Node descriptNode = element.getElementsByTagName("Description").item(0);
+			String description = descriptNode.getTextContent();
+
 		}
 
 		return null;
