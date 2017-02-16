@@ -4,10 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RuleRepository {
-<<<<<<< HEAD
-=======
 
->>>>>>> 68854e9527ca7882bce5bf53662e3d51f139dfff
 	public int position = 0;
 	Map<String, Question> ruleMap = new HashMap<>();
 
