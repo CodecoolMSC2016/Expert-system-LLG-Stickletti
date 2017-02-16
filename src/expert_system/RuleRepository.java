@@ -6,7 +6,7 @@ import java.util.Map;
 public class RuleRepository {
 
 	public int position = 0;
-	Map<String, Question> ruleMap = new HashMap<>();
+	static Map<String, Question> ruleMap = new HashMap<>();
 
 	public Question addQuestion(String id, Question question) {
 		ruleMap.put(id, question);
