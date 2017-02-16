@@ -10,8 +10,7 @@ public abstract class SingleValue extends Value {
 
 	}
 
-	public String[] getTrueValue() {
-		String [] trueValue = new String[1];
+	public String getTrueValue() {
 		
 		return trueValue;
 
