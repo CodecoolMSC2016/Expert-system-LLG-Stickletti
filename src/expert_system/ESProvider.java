@@ -1,5 +1,7 @@
 package expert_system;
 
+import java.util.ArrayList;
+
 public class ESProvider {
 	FactParser factParser;
 	RuleParser ruleParser;
@@ -8,11 +10,15 @@ public class ESProvider {
 		this.factParser = factParser;
 		this.ruleParser = ruleParser;
 	}
-
-	public void collectAnswers() {
+	Map<String, Question,Boolean> evalMap = new HashMap<>();
+	public ArrayList<E> <String> answerCollection = new Arraylist <>;
+	
+	public boolean getAnswerByQuestion(String questionID)
+	{
 	}
 
-	public void getEvaluateAnswer(Boolean id) {
+	public void collectAnswers() {
+		answerCollection.add(this.toString());
 	}
 
 	public String evaluate() {

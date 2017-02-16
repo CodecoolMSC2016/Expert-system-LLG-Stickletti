@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RuleRepository {
-	public int positon = 0;
+	public int position = 0;
 	Map<String, Question> ruleMap = new HashMap<>();
 
 	public Question addQuestion(String id, Question question) {
